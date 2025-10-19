@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": "./dist"
+  },
+  "include": ["./**/*.ts", "index.js", "controllers/tripController.js", "routes/tripRoutes.js", "routes/standRoutes.js", "routes/routeRoutes.js", "models/Stand.js", "models/Route.js", "controllers/standController.js", "controllers/routeController.js"]
+}
