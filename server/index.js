@@ -33,11 +33,11 @@ mongoose
   .then(() => console.log("✅ MongoDB connected"))
   .catch((err) => console.error("❌ Connection error:", err));
 
-// ✅ Routes
+// Routes
 app.use("/api/routes", routeRoutes);
 app.use("/api/stands", standRoutes);
 app.use("/api/trips", tripRoutes);
 
-// ✅ Server startup
+// Server startup
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));

@@ -56,7 +56,7 @@ const Community = () => {
     };
 
     try {
-      const res = await fetch("/api/routes/createRoute", {
+      const res = await fetch("http://localhost:5000/api/routes", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newRoute),
@@ -141,17 +141,17 @@ const Community = () => {
         <div className="grid grid-cols-3 gap-3 mb-6">
           <Card className="p-4 text-center border-2">
             <Users className="h-6 w-6 text-primary mx-auto mb-2" />
-            <p className="text-2xl font-bold text-foreground">1,247</p>
+            <p className="text-2xl font-bold text-foreground">0</p>
             <p className="text-xs text-muted-foreground">Contributors</p>
           </Card>
           <Card className="p-4 text-center border-2">
             <TrendingUp className="h-6 w-6 text-secondary mx-auto mb-2" />
-            <p className="text-2xl font-bold text-foreground">342</p>
+            <p className="text-2xl font-bold text-foreground">0</p>
             <p className="text-xs text-muted-foreground">This Month</p>
           </Card>
           <Card className="p-4 text-center border-2">
             <Award className="h-6 w-6 text-accent mx-auto mb-2" />
-            <p className="text-2xl font-bold text-foreground">98%</p>
+            <p className="text-2xl font-bold text-foreground">0</p>
             <p className="text-xs text-muted-foreground">Accuracy</p>
           </Card>
         </div>
